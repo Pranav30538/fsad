@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chef's Recipes & Cooking Videos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      color: #333;
+    }
+
+    header {
+      background: #e63946;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    section {
+      padding: 50px 40px;
+    }
+
+    .recipes, .videos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 15px;
+    }
+
+    .card p {
+      margin: 0 15px 15px 15px;
+      color: #555;
+    }
+
+    .about {
+      background: #fff5e6;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #1d1d1d;
+      color: #ddd;
+      padding: 20px;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Chef Srishanth</h1>
+    <nav>
+      <a href="#recipes">Recipes</a>
+      <a href="#videos">Videos</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Delicious Recipes & Masterclass Cooking Videos</h2>
+  </div>
+
+  <section id="recipes">
+    <h2>Featured Recipes</h2>
+    <div class="recipes">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1604908176997-3e1eb6b4a294" />
+        <h3>Chicken Majestic</h3>
+        <p>A classic taste of Chicken and cashew.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe" />
+        <h3>Chicken tikka masala</h3>
+        <p>Tender, juicy, perfectly seasoned grilled chicken.</p>
+      </div>
+
+      <div class="card">
+        <img src="" />
+        <h3>Apricot Delight</h3>
+        <p>Crisp, refreshing, and loaded with nutrients.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="videos">
+    <h2>Cooking Videos</h2>
+    <div class="videos">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1514517548885-19934b223603" />
+        <h3>How to Make Perfect Biryani</h3>
+        <p>Step-by-step video tutorial.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1481931715705-36f5f79f1ff4" />
+        <h3>High-Protien meal prep</h3>
+        <p>Professional chef techniques simplified.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543" />
+        <h3>Pastry Perfection Class</h3>
+        <p>Master the art of baking.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About the Chef</h2>
+    <div class="about">
+      <p>Chef Srishanth is an award-winning culinary artist with over 20 years of experience crafting world-class dishes. Known for blending tradition with innovation, his recipes bring flavors to life. He has been featured in multiple international cooking shows and is loved for his simple teaching style and passion for food.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Chef Srishanth | All Rights Reserved
+  </footer>
+</body>
+</html>
